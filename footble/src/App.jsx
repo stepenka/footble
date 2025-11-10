@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Header } from "./components";
+import json from "./data/db.json";
 
 const App = () => {
   const [solution, setSolution] = useState(null);
   const [teams, setTeams] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5174/teams")
-      .then((res) => res.json())
-      .then((json) => {
-        const randomSolution = json[Math.floor(Math.random() * json.length)];
-        setSolution(randomSolution);
-        setTeams(json);
-      });
+    const teamData = json.teams;
+    const randomSolution =
+      teamData[Math.floor(Math.random() * teamData.length)];
+    setSolution(randomSolution);
+    setTeams(teamData);
   }, [setSolution]);
 
   const pickAgain = () => {
