@@ -1,0 +1,44 @@
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.modalContainer {
+  max-width: 480px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 10% auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modalContainer h1 {
+  color: var(--container-blue);
+  text-align: center;
+}
+
+.modalContainer p {
+  color: #000;
+}
+
+.solution {
+  color: var(--guess-blue);
+  font-weight: bold;
+}
+
+.playContainer {
+  margin: auto;
+  width: max-content;
+}
+
+.playButton {
+  margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,120 @@
+.overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.settingsContainer {
+  position: relative;
+  max-width: 480px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 10% auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.settingsContainer h1 {
+  color: var(--container-blue);
+  text-align: center;
+  margin: 0;
+}
+
+.settingsContainer h3 {
+  color: #000;
+  margin: 0;
+}
+
+.difficultyContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  width: max-content;
+  height: max-content;
+  gap: 10px;
+  padding: 10px 0px;
+}
+
+.difficultyContainer p {
+  color: #000;
+  margin: 0;
+}
+
+.toggle {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.toggleLabel .toggleButton {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.toggle:checked + .toggleLabel .toggleButton {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.toggleLabel:active .toggleButton {
+  width: 25px;
+}
+
+.closeSettings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.closeSettings:hover {
+  animation: rotate 0.7s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}

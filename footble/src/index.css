@@ -1,0 +1,24 @@
+:root {
+  --container-blue: #00004b;
+  --nav-blue: #01012e;
+  --guess-blue: #0000a0;
+  --accent-blue: #030327;
+  --background-blue: #000026;
+  --feedback-background: #ffffff80;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arsenal", sans-serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}

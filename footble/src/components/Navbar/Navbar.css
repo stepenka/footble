@@ -1,0 +1,58 @@
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  background: var(--nav-blue);
+  padding: 0px 50px;
+}
+
+.logoContainer {
+  position: relative;
+  background: #fff;
+  color: var(--container-blue);
+  width: max-content;
+  padding: 5px 10px;
+  height: max-content;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: auto;
+  display: flex;
+}
+
+.logoText {
+  position: relative;
+  font-weight: bold;
+  margin: auto;
+}
+
+.logoImage {
+  position: relative;
+  height: 40px;
+}
+
+.buttonsContainer {
+  position: relative;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.buttonsContainer li {
+  position: relative;
+  margin: auto;
+  height: max-content;
+  width: max-content;
+}
+
+.buttonsContainer li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonsContainer li button img {
+  height: 40px;
+}

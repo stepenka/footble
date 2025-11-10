@@ -1,0 +1,126 @@
+header {
+  min-height: 100vh;
+  width: 100%;
+  background: url("../../assets/background.svg");
+  background-color: var(--background-blue);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: scroll;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.displayContainer {
+  position: relative;
+  background: var(--container-blue);
+  height: max-content;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1;
+  grid-template-rows: auto auto;
+  border-radius: 0px 0px 90px 90px;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.imageContainer {
+  position: relative;
+  width: max-content;
+  height: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1;
+  grid-template-rows: auto 1fr;
+  background: #fff;
+  border-radius: 0px 0px 90px 90px;
+  padding: 15px;
+  gap: 10px;
+  margin: 0 150px;
+}
+
+.displayText {
+  color: var(--container-blue);
+  width: max-content;
+  position: relative;
+  margin: 0 auto;
+}
+
+.displayImage {
+  width: 700px;
+  position: relative;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 90px 90px 90px 90px;
+}
+
+.displayImageSaturated {
+  width: 700px;
+  position: relative;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 90px 90px 90px 90px;
+  filter: grayscale(1);
+}
+
+.displayGuess {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1;
+  width: 80%;
+  margin: 0 auto;
+  border-color: var(--guess-blue);
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+.guessEntry {
+  padding: 5px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  font-family: "Arsenal", sans-serif;
+  color: #ffffff80;
+}
+
+.guessButton {
+  height: 100%;
+  width: 100%;
+  background: var(--guess-blue);
+  color: #fff;
+  border: none;
+  font-family: "Arsenal", sans-serif;
+  font-size: 22px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.loss {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 32px;
+}
+
+.victory {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 32px;
+}

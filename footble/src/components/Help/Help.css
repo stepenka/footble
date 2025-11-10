@@ -1,0 +1,64 @@
+.helpOverlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.helpContainer {
+  position: relative;
+  max-width: 480px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 10% auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.helpContainer h1 {
+  color: var(--container-blue);
+  text-align: center;
+  margin: 0;
+}
+
+.helpContainer p {
+  color: #000;
+  margin: 0;
+  padding: 10px 0px;
+}
+
+.closeHelp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.closeHelp:hover {
+  animation: rotate 0.7s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
