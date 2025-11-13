@@ -1,155 +1,256 @@
 {
   "teams": [
-    { "name": "Ajax", "id": 1, "country": "Netherlands", "city": "Amsterdam" },
-    { "name": "Arsenal", "id": 2, "country": "England", "city": "London" },
-    { "name": "Atalanta", "id": 3, "country": "Italy", "city": "Bergamo" },
+    {
+      "name": "Ajax",
+      "id": 1,
+      "country": "Netherlands",
+      "city": "Amsterdam",
+      "aliases": [""]
+    },
+    {
+      "name": "Arsenal",
+      "id": 2,
+      "country": "England",
+      "city": "London",
+      "aliases": [""]
+    },
+    {
+      "name": "Atalanta",
+      "id": 3,
+      "country": "Italy",
+      "city": "Bergamo",
+      "aliases": [""]
+    },
     {
       "name": "Atheltic Club Bilbao",
       "id": 4,
       "country": "Spain",
-      "city": "Bilbao"
+      "city": "Bilbao",
+      "aliases": ["Bilbao"]
     },
     {
       "name": "Atletico Madrid",
       "id": 5,
       "country": "Spain",
-      "city": "Madrid"
+      "city": "Madrid",
+      "aliases": ["Atletico"]
     },
     {
       "name": "Borussia Dortmund",
       "id": 6,
       "country": "Germany",
-      "city": "Dortmund"
+      "city": "Dortmund",
+      "aliases": ["Dortmund"]
     },
-    { "name": "Barcelona", "id": 7, "country": "Spain", "city": "Barcelona" },
+    {
+      "name": "FC Barcelona",
+      "id": 7,
+      "country": "Spain",
+      "city": "Barcelona",
+      "aliases": ["Barca", "Barcelona"]
+    },
     {
       "name": "Bayern Munich",
       "id": 8,
       "country": "Germany",
-      "city": "Munich"
+      "city": "Munich",
+      "aliases": ["Munich"]
     },
-    { "name": "Benfica", "id": 9, "country": "Portugal", "city": "Lisbon" },
-    { "name": "Bodø/Glimt", "id": 10, "country": "Norway", "city": "Bodø" },
-    { "name": "Chelsea", "id": 11, "country": "England", "city": "London" },
-    { "name": "Club Brugge", "id": 12, "country": "Belgium", "city": "Bruges" },
     {
-      "name": "Copenhagen",
+      "name": "SL Benfica",
+      "id": 9,
+      "country": "Portugal",
+      "city": "Lisbon",
+      "aliases": ["Benfica"]
+    },
+    {
+      "name": "Bodø/Glimt",
+      "id": 10,
+      "country": "Norway",
+      "city": "Bodø",
+      "aliases": ["Bodo", "Glimt", "SK Bodø/Glimt"]
+    },
+    {
+      "name": "Chelsea",
+      "id": 11,
+      "country": "England",
+      "city": "London",
+      "aliases": [""]
+    },
+    {
+      "name": "Club Brugge",
+      "id": 12,
+      "country": "Belgium",
+      "city": "Bruges",
+      "aliases": ["Brugge"]
+    },
+    {
+      "name": "FC Copenhagen",
       "id": 13,
       "country": "Denmark",
-      "city": "Copenhagen"
+      "city": "Copenhagen",
+      "aliases": ["Copenhagen"]
     },
     {
-      "name": "Frankfurt",
+      "name": "Eintracht Frankfurt",
       "id": 14,
       "country": "Germany",
-      "city": "Frankfurt"
+      "city": "Frankfurt",
+      "aliases": ["Frankfurt"]
     },
     {
       "name": "Galatasaray",
       "id": 15,
       "country": "Turkey",
-      "city": "Istanbul"
+      "city": "Istanbul",
+      "aliases": ["Gala"]
     },
     {
       "name": "Internazionale Milano",
       "id": 16,
       "country": "Italy",
-      "city": "Milan"
+      "city": "Milan",
+      "aliases": ["Inter", "Milan"]
     },
-    { "name": "Juventus", "id": 17, "country": "Italy", "city": "Turin" },
+    {
+      "name": "Juventus",
+      "id": 17,
+      "country": "Italy",
+      "city": "Turin",
+      "aliases": ["Juve"]
+    },
     {
       "name": "Kairat Almaty",
       "id": 18,
       "country": "Kazakhstan",
-      "city": "Almaty"
+      "city": "Almaty",
+      "aliases": ["Almaty"]
     },
     {
-      "name": "Leverkusen",
+      "name": "Bayer 04 Leverkusen",
       "id": 19,
       "country": "Germany",
-      "city": "Leverkusen"
+      "city": "Leverkusen",
+      "aliases": ["Bayer Leverkusen", "Leverkusen"]
     },
     {
       "name": "Liverpool",
       "id": 20,
       "country": "England",
-      "city": "Liverpool"
+      "city": "Liverpool",
+      "aliases": [""]
     },
     {
       "name": "Manchester City",
       "id": 21,
       "country": "England",
-      "city": "Manchester"
+      "city": "Manchester",
+      "aliases": ["City"]
     },
-    { "name": "Marseille", "id": 22, "country": "France", "city": "Marseille" },
-    { "name": "Monaco", "id": 23, "country": "Monaco", "city": "Monaco" },
-    { "name": "Napoli", "id": 24, "country": "Italy", "city": "Naples" },
+    {
+      "name": "Olympique de Marseille",
+      "id": 22,
+      "country": "France",
+      "city": "Marseille",
+      "aliases": ["Marseille", "OM Marseille"]
+    },
+    {
+      "name": "AS Monaco",
+      "id": 23,
+      "country": "Monaco",
+      "city": "Monaco",
+      "aliases": ["Monaco"]
+    },
+    {
+      "name": "Napoli",
+      "id": 24,
+      "country": "Italy",
+      "city": "Naples",
+      "aliases": [""]
+    },
     {
       "name": "Newcastle United",
       "id": 25,
       "country": "England",
-      "city": "Newcastle upon Tyne"
+      "city": "Newcastle upon Tyne",
+      "aliases": [""]
     },
     {
       "name": "Olympiacos FC",
       "id": 26,
       "country": "Greece",
-      "city": "Piraeus"
+      "city": "Piraeus",
+      "aliases": [""]
     },
-    { "name": "Pafos FC", "id": 27, "country": "Cyprus", "city": "Paphos" },
+    {
+      "name": "Pafos FC",
+      "id": 27,
+      "country": "Cyprus",
+      "city": "Paphos",
+      "aliases": [""]
+    },
     {
       "name": "Paris Saint-Germain",
       "id": 28,
       "country": "France",
-      "city": "Paris"
+      "city": "Paris",
+      "aliases": ["PSG"]
     },
     {
       "name": "PSV Eindhoven",
       "id": 29,
       "country": "Netherlands",
-      "city": "Eindhoven"
+      "city": "Eindhoven",
+      "aliases": [""]
     },
     {
       "name": "Qarabağ FK",
       "id": 30,
       "country": "Azerbaijan",
-      "city": "Aghdam"
+      "city": "Aghdam",
+      "aliases": [""]
     },
     {
       "name": "Real Madrid C.F.",
       "id": 31,
       "country": "Spain",
-      "city": "Madrid"
+      "city": "Madrid",
+      "aliases": ["Madrid", "Real"]
     },
     {
       "name": "Slavia Praha",
       "id": 32,
       "country": "Czechia",
-      "city": "Prague"
+      "city": "Prague",
+      "aliases": ["Praha", "Prague"]
     },
     {
       "name": "Sporting Clube de Portugal",
       "id": 33,
       "country": "Portugal",
-      "city": "Lisbon"
+      "city": "Lisbon",
+      "aliases": ["Sporting", "Lisbon"]
     },
     {
       "name": "Tottenham Hotspur",
       "id": 34,
       "country": "England",
-      "city": "London"
+      "city": "London",
+      "aliases": ["Spurs"]
     },
     {
       "name": "Union Saint-Gilloise",
       "id": 35,
       "country": "Belgium",
-      "city": "Brussels"
+      "city": "Brussels",
+      "aliases": ["USG", "Union", "Saint-Gilloise"]
     },
     {
       "name": "Villarreal CF",
       "id": 36,
       "country": "Spain",
-      "city": "Villarreal"
+      "city": "Villarreal",
+      "aliases": [""]
     }
   ]
 }

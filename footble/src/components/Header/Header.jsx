@@ -24,9 +24,23 @@ const Header = (props) => {
     setTurn,
   } = useFootble(props.solution, props.json);
 
+  const [buttonStatus, setButtonStatus] = useState(false);
+
   const change = (event) => {
     setCurrentGuess(event.target.value);
     searchTeams(event.target.value);
+
+    let inDB = false;
+    for (const squad of props.json) {
+      if (event.target.value === squad.name) {
+        inDB = true;
+      }
+    }
+    if (inDB) {
+      setButtonStatus(true);
+    } else {
+      setButtonStatus(false);
+    }
   };
 
   const [showModal, setShowModal] = useState(false);
@@ -46,11 +60,20 @@ const Header = (props) => {
       return team.name.match(regex);
     });
 
+    let aliasMatches = props.json.filter((team) => {
+      const regex = new RegExp(`^${searchDb}`, "gi");
+      for (const alias of team.aliases) {
+        return alias.match(regex);
+      }
+    });
+
+    matches = new Set([...matches, ...aliasMatches]);
+
     if (searchDb.length === 0) {
       matches = [];
     }
 
-    setDbTeams(matches);
+    setDbTeams([...matches]);
   };
 
   useEffect(() => {
@@ -103,7 +126,11 @@ const Header = (props) => {
                   id="input"
                   list="matchList"
                 ></input>
-                <button className="guessButton" onClick={submitGuess}>
+                <button
+                  className="guessButton"
+                  onClick={submitGuess}
+                  disabled={!buttonStatus}
+                >
                   Guess
                 </button>
               </div>

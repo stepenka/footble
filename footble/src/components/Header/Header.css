@@ -105,6 +105,13 @@ header {
   cursor: pointer;
 }
 
+.guessButton:disabled {
+  background: var(--container-blue);
+  cursor: auto;
+  border-radius: 0px 15px 15px 0px;
+  border-style: dashed;
+}
+
 .loss {
   position: relative;
   width: 80%;
