@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
-import { squads } from "../../assets";
+import { logo, nologo } from "../../assets";
 import {
   Navbar,
   Feedback,
@@ -46,7 +46,7 @@ const Header = (props) => {
   const [showModal, setShowModal] = useState(false);
 
   const [showSettings, setShowSettings] = useState(false);
-  const [saturation, setSaturation] = useState(false);
+  const [showLogo, setShowLogo] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [showStats, setShowStats] = useState(false);
 
@@ -54,19 +54,20 @@ const Header = (props) => {
 
   //   Search the local db and filter to provide auto complete suggestions
   const searchTeams = (searchDb) => {
+    const regex = new RegExp(`^${searchDb}`, "gi");
     // Get matches for current input
     let matches = props.json.filter((team) => {
-      const regex = new RegExp(`^${searchDb}`, "gi");
       return team.name.match(regex);
     });
 
-    let aliasMatches = props.json.filter((team) => {
-      const regex = new RegExp(`^${searchDb}`, "gi");
+    let aliasMatches = [];
+    for (const team of props.json) {
       for (const alias of team.aliases) {
-        return alias.match(regex);
+        if (alias.match(regex)) {
+          aliasMatches.push(team);
+        }
       }
-    });
-
+    }
     matches = new Set([...matches, ...aliasMatches]);
 
     if (searchDb.length === 0) {
@@ -104,15 +105,15 @@ const Header = (props) => {
           <div className="displayContainer">
             <div className="imageContainer">
               <h1 className="displayText">Guess the Champions League Team</h1>
-              {!saturation ? (
+              {!showLogo ? (
                 <img
                   className="displayImage"
-                  src={squads[props.solution.id - 1]}
+                  src={logo[props.solution.id - 1]}
                 ></img>
               ) : (
                 <img
-                  className="displayImageSaturated"
-                  src={squads[props.solution.id - 1]}
+                  className="displayImage"
+                  src={nologo[props.solution.id - 1]}
                 ></img>
               )}
             </div>
@@ -156,8 +157,8 @@ const Header = (props) => {
         {showSettings && (
           <Settings
             setShowSettings={setShowSettings}
-            saturation={saturation}
-            setSaturation={setSaturation}
+            showLogo={showLogo}
+            setShowLogo={setShowLogo}
           ></Settings>
         )}
         {showHelp && <Help setShowHelp={setShowHelp}></Help>}

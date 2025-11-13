@@ -2,11 +2,11 @@ import React from "react";
 import "./Settings.css";
 
 const Settings = (props) => {
-  const saturationChange = () => {
-    if (props.saturation) {
-      props.setSaturation(false);
+  const logoChange = () => {
+    if (props.showLogo) {
+      props.setShowLogo(false);
     } else {
-      props.setSaturation(true);
+      props.setShowLogo(true);
     }
   };
 
@@ -23,18 +23,18 @@ const Settings = (props) => {
         <h1>Settings</h1>
         <h3>Difficulty</h3>
         <div className="difficultyContainer">
-          <p>Grayscale</p>
+          <p>Hide Logos</p>
           <input
             className="toggle"
             type="checkbox"
             id={"toggle"}
-            checked={props.saturation}
-            onChange={saturationChange}
+            checked={props.showLogo}
+            onChange={logoChange}
           />
           <label
             className="toggleLabel"
             htmlFor={`toggle`}
-            style={{ background: props.saturation && "#0000a0" }}
+            style={{ background: props.showLogo && "#0000a0" }}
           >
             <span className="toggleButton" />
           </label>
