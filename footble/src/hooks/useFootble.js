@@ -7,6 +7,7 @@ const useFootble = (solution, json) => {
   const [history, setHistory] = useState([]);
   const [isCorrect, setIsCorrect] = useState(false);
   const [games, setGames] = useState([]);
+  const [hard, setHard] = useState(false);
 
   const provideFeedback = () => {
     let match = null;
@@ -50,7 +51,7 @@ const useFootble = (solution, json) => {
 
   const storeData = () => {
     setGames((prevGames) => {
-      return [...prevGames, turn];
+      return [...prevGames, { turn, hard }];
     });
   };
 
@@ -73,6 +74,8 @@ const useFootble = (solution, json) => {
     reset,
     games,
     setTurn,
+    hard,
+    setHard,
   };
 };
 

@@ -23,6 +23,8 @@ const Header = (props) => {
     reset,
     games,
     setTurn,
+    hard,
+    setHard,
   } = useFootble(props.solution, props.json);
 
   const change = (event) => {
@@ -158,6 +160,8 @@ const Header = (props) => {
             setShowSettings={setShowSettings}
             showLogo={showLogo}
             setShowLogo={setShowLogo}
+            hard={hard}
+            setHard={setHard}
           ></Settings>
         )}
         {showHelp && <Help setShowHelp={setShowHelp}></Help>}

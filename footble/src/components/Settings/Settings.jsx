@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Settings.css";
 
 const Settings = (props) => {
   const logoChange = () => {
     if (props.showLogo) {
+      props.setHard(false);
       props.setShowLogo(false);
     } else {
+      props.setHard(true);
       props.setShowLogo(true);
     }
   };
+
+  useEffect(() => {}, [props.hard]);
 
   const closeSettings = () => {
     props.setShowSettings(false);
