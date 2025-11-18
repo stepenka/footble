@@ -229,7 +229,7 @@
       "id": 33,
       "country": "Portugal",
       "city": "Lisbon",
-      "aliases": ["Sporting", "Lisbon"]
+      "aliases": ["Lisbon"]
     },
     {
       "name": "Tottenham Hotspur",
@@ -243,7 +243,7 @@
       "id": 35,
       "country": "Belgium",
       "city": "Brussels",
-      "aliases": ["USG", "Union", "Saint-Gilloise"]
+      "aliases": ["USG", "Saint-Gilloise"]
     },
     {
       "name": "Villarreal CF",

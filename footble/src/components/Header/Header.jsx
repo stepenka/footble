@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Select from "react-select";
 import "./Header.css";
 import { logo, nologo } from "../../assets";
 import {
@@ -24,24 +25,15 @@ const Header = (props) => {
     setTurn,
   } = useFootble(props.solution, props.json);
 
-  const [buttonStatus, setButtonStatus] = useState(false);
-
   const change = (event) => {
-    setCurrentGuess(event.target.value);
-    searchTeams(event.target.value);
-
-    let inDB = false;
-    for (const squad of props.json) {
-      if (event.target.value === squad.name) {
-        inDB = true;
-      }
-    }
-    if (inDB) {
-      setButtonStatus(true);
-    } else {
-      setButtonStatus(false);
-    }
+    setCurrentGuess(event);
   };
+
+  useEffect(() => {
+    if (currentGuess != "") {
+      submitGuess();
+    }
+  }, [currentGuess]);
 
   const [showModal, setShowModal] = useState(false);
 
@@ -49,33 +41,6 @@ const Header = (props) => {
   const [showLogo, setShowLogo] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [showStats, setShowStats] = useState(false);
-
-  const [dbTeams, setDbTeams] = useState([]);
-
-  //   Search the local db and filter to provide auto complete suggestions
-  const searchTeams = (searchDb) => {
-    const regex = new RegExp(`^${searchDb}`, "gi");
-    // Get matches for current input
-    let matches = props.json.filter((team) => {
-      return team.name.match(regex);
-    });
-
-    let aliasMatches = [];
-    for (const team of props.json) {
-      for (const alias of team.aliases) {
-        if (alias.match(regex)) {
-          aliasMatches.push(team);
-        }
-      }
-    }
-    matches = new Set([...matches, ...aliasMatches]);
-
-    if (searchDb.length === 0) {
-      matches = [];
-    }
-
-    setDbTeams([...matches]);
-  };
 
   useEffect(() => {
     if (isCorrect) {
@@ -91,6 +56,53 @@ const Header = (props) => {
     props.pickAgain();
     reset();
     setShowModal(false);
+  };
+
+  const filterOptions = (option, searchText) => {
+    let aliasMatch = false;
+    for (const alias of option.value) {
+      if (alias.toLowerCase().includes(searchText.toLowerCase())) {
+        aliasMatch = true;
+      }
+    }
+    return option.label.toLowerCase().includes(searchText.toLowerCase()) ||
+      aliasMatch
+      ? true
+      : false;
+  };
+
+  const squads = props.json.map((team) => {
+    return { value: team.aliases, label: team.name };
+  });
+
+  const customStyles = {
+    menuList: (provided, state) => ({
+      ...provided,
+      backgroundColor: "#00004b",
+      color: state.isFocused ? "#0000a0" : "white",
+      borderStyle: "solid",
+      borderColor: "#0000a0",
+      borderRadius: "20px",
+    }),
+    menu: (provided) => ({
+      ...provided,
+      backgroundColor: "#00004b",
+    }),
+    control: (provided) => ({
+      ...provided,
+      backgroundColor: "#00004b",
+      borderStyle: "none",
+      borderRadius: "20px",
+      color: "white",
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      color: state.isFocused ? "#0000a0" : "white",
+    }),
+    input: (provided) => ({
+      ...provided,
+      color: "white",
+    }),
   };
 
   return (
@@ -119,30 +131,17 @@ const Header = (props) => {
             </div>
             {!showModal && (
               <div className="displayGuess">
-                <input
-                  onChange={change}
-                  value={currentGuess}
+                <Select
+                  autoFocus={true}
+                  blurInputOnSelect={true}
+                  options={squads}
+                  onChange={(e) => change(e.label)}
                   placeholder="Enter a team name"
-                  className="guessEntry"
-                  id="input"
-                  list="matchList"
-                ></input>
-                <button
-                  className="guessButton"
-                  onClick={submitGuess}
-                  disabled={!buttonStatus}
-                >
-                  Guess
-                </button>
+                  filterOption={filterOptions}
+                  styles={customStyles}
+                />
               </div>
             )}
-            <datalist id="matchList">
-              {dbTeams.map((dbTeam) => (
-                <option key={dbTeam.id} value={dbTeam.name}>
-                  {dbTeam.name}
-                </option>
-              ))}
-            </datalist>
           </div>
           <Feedback guesses={guesses} solution={props.solution} />
         </div>
