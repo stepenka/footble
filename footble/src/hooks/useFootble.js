@@ -20,7 +20,7 @@ const useFootble = (solution, json) => {
   };
 
   const addNewGuess = (formattedGuess) => {
-    if (formattedGuess === solution) {
+    if (formattedGuess.name === solution.name) {
       setIsCorrect(true);
     }
     setGuesses((prevGuesses) => {

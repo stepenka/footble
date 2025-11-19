@@ -42,3 +42,29 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.modalContainer ul {
+  padding: 0;
+  margin: 0;
+}
+
+.modalContainer ul li {
+  display: flex;
+  width: max-content;
+  margin: 10px 0px;
+}
+
+.modalContainer ul li div {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.modalContainer ul li p {
+  margin: 0;
+}
+
+.dap {
+  position: relative;
+  width: 100%;
+}

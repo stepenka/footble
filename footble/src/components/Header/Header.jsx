@@ -27,6 +27,8 @@ const Header = (props) => {
     setHard,
   } = useFootble(props.solution, [...props.json, ...props.extras]);
 
+  //   console.log(props.json);
+
   const change = (event) => {
     setCurrentGuess(event);
   };
@@ -174,6 +176,10 @@ const Header = (props) => {
             turn={turn}
             solution={props.solution.name}
             playAgain={playAgain}
+            allDone={props.allDone}
+            baseDone={props.baseDone}
+            allTeams={props.allTeams}
+            setAllTeams={props.setAllTeams}
           ></Banner>
         )}
         {showSettings && (

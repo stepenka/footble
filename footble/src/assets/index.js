@@ -11,6 +11,7 @@ import brugge from "./Brugge.png";
 import chelsea from "./Chelsea.png";
 import city from "./City.png";
 import copenhagen from "./Copenhagen.png";
+import dap from "./dap.gif";
 import dortmund from "./Dortmund.png";
 import frankfurt from "./Frankfurt.png";
 import gala from "./Galatasaray.png";
@@ -343,4 +344,15 @@ const nologo = [
   zrinjski2,
 ];
 
-export { background, ucl, help, settings, stats, logo, nologo, wrong, correct };
+export {
+  background,
+  ucl,
+  dap,
+  help,
+  settings,
+  stats,
+  logo,
+  nologo,
+  wrong,
+  correct,
+};
