@@ -42,7 +42,7 @@ const useFootble = (solution, json) => {
       return;
     }
     if (history.includes(currentGuess)) {
-      console.log("Already guessed that");
+      alert("Already guessed that");
       return;
     }
     const formattedGuess = provideFeedback();

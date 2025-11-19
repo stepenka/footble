@@ -25,7 +25,7 @@ const Header = (props) => {
     setTurn,
     hard,
     setHard,
-  } = useFootble(props.solution, props.json);
+  } = useFootble(props.solution, [...props.json, ...props.extras]);
 
   const change = (event) => {
     setCurrentGuess(event);
@@ -41,7 +41,9 @@ const Header = (props) => {
 
   const [showSettings, setShowSettings] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
+
   const [showHelp, setShowHelp] = useState(false);
+
   const [showStats, setShowStats] = useState(false);
 
   useEffect(() => {
@@ -73,9 +75,28 @@ const Header = (props) => {
       : false;
   };
 
-  const squads = props.json.map((team) => {
-    return { value: team.aliases, label: team.name };
-  });
+  const [squads, setSquads] = useState(
+    props.json.map((team) => {
+      return { value: team.aliases, label: team.name };
+    })
+  );
+
+  useEffect(() => {
+    if (props.allTeams) {
+      const teams = [...props.json, ...props.extras];
+      setSquads(
+        teams.map((team) => {
+          return { value: team.aliases, label: team.name };
+        })
+      );
+    } else {
+      setSquads(
+        props.json.map((team) => {
+          return { value: team.aliases, label: team.name };
+        })
+      );
+    }
+  }, [props.allTeams]);
 
   const customStyles = {
     menuList: (provided, state) => ({
@@ -162,6 +183,8 @@ const Header = (props) => {
             setShowLogo={setShowLogo}
             hard={hard}
             setHard={setHard}
+            allTeams={props.allTeams}
+            setAllTeams={props.setAllTeams}
           ></Settings>
         )}
         {showHelp && <Help setShowHelp={setShowHelp}></Help>}

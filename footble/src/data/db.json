@@ -252,5 +252,329 @@
       "city": "Villarreal",
       "aliases": [""]
     }
+  ],
+  "extras": [
+    {
+      "name": "FC Basel 1893",
+      "id": 37,
+      "country": "Switerland",
+      "city": "Basel",
+      "aliases": ["Basel"]
+    },
+    {
+      "name": "Crvena Zvezda",
+      "id": 38,
+      "country": "Serbia",
+      "city": "Belgrade",
+      "aliases": ["Red Star Belgrade", "Belgrade"]
+    },
+    {
+      "name": "SK Brann",
+      "id": 39,
+      "country": "Norway",
+      "city": "Bergen",
+      "aliases": ["Brann"]
+    },
+    {
+      "name": "ŠK Slovan Bratislava",
+      "id": 40,
+      "country": "Slovakia",
+      "city": "Bratislava",
+      "aliases": ["Slovan Bratislava", "Bratislava"]
+    },
+    {
+      "name": "Breiðablik",
+      "id": 41,
+      "country": "Iceland",
+      "city": "Kópavogur",
+      "aliases": ["Breidablik"]
+    },
+    {
+      "name": "FK Budućnost Podgorica",
+      "id": 42,
+      "country": "Montenegro",
+      "city": "Podgorica",
+      "aliases": ["Buducnost Podgorica"]
+    },
+    {
+      "name": "Celtic F.C.",
+      "id": 43,
+      "country": "Scotland",
+      "city": "Glasgow",
+      "aliases": ["Celtic"]
+    },
+    {
+      "name": "FC Differdange 03",
+      "id": 44,
+      "country": "Luxembourg",
+      "city": "Differdange",
+      "aliases": ["Differdange"]
+    },
+    {
+      "name": "FC Drita",
+      "id": 45,
+      "country": "Kosovo",
+      "city": "Gjilan",
+      "aliases": ["Drita"]
+    },
+    {
+      "name": "FK Egnatia",
+      "id": 46,
+      "country": "Albania",
+      "city": "Rrogozhinë",
+      "aliases": ["Egnatia"]
+    },
+    {
+      "name": "Inter Club d'Escaldes",
+      "id": 47,
+      "country": "Andorra",
+      "city": "Escaldes–Engordany",
+      "aliases": ["Escaldes"]
+    },
+    {
+      "name": "FC Steaua București",
+      "id": 48,
+      "country": "Romania",
+      "city": "Bucharest",
+      "aliases": ["FCSB", "Bucharest"]
+    },
+    {
+      "name": "Fenerbahçe S.K.",
+      "id": 49,
+      "country": "Turkey",
+      "city": "Istanbul",
+      "aliases": ["Fener"]
+    },
+    {
+      "name": "Ferencvárosi TC",
+      "id": 50,
+      "country": "Hungary",
+      "city": "Ferencváros",
+      "aliases": ["Ferencvaros"]
+    },
+    {
+      "name": "Feyenoord",
+      "id": 51,
+      "country": "Netherlands",
+      "city": "Rotterdam",
+      "aliases": [""]
+    },
+    {
+      "name": "SK Sturm Graz",
+      "id": 52,
+      "country": "Austria",
+      "city": "Graz",
+      "aliases": ["Sturm Graz"]
+    },
+    {
+      "name": "Ħamrun Spartans F.C.",
+      "id": 53,
+      "country": "Malta",
+      "city": "Ħamrun",
+      "aliases": ["Hamrun Spartans"]
+    },
+    {
+      "name": "Kuopion Palloseura",
+      "id": 54,
+      "country": "Finland",
+      "city": "Kuopio",
+      "aliases": ["KuPS"]
+    },
+    {
+      "name": "FC Dynamo Kyiv",
+      "id": 55,
+      "country": "Ukraine",
+      "city": "Kyiv",
+      "aliases": ["Dynamo Kiev"]
+    },
+    {
+      "name": "FCI Levadia Tallinn",
+      "id": 56,
+      "country": "Estonia",
+      "city": "Tallinn",
+      "aliases": ["Levadia"]
+    },
+    {
+      "name": "Lincoln Red Imps F.C.",
+      "id": 57,
+      "country": "Gibraltar",
+      "city": "Gibraltar",
+      "aliases": [""]
+    },
+    {
+      "name": "Linfield F.C.",
+      "id": 58,
+      "country": "Northern Ireland",
+      "city": "Belfast",
+      "aliases": [""]
+    },
+    {
+      "name": "PFC Ludogorets Razgrad",
+      "id": 59,
+      "country": "Bulgaria",
+      "city": "Razgrad",
+      "aliases": ["Ludogorets"]
+    },
+    {
+      "name": "Maccabi Tel Aviv F.C.",
+      "id": 60,
+      "country": "Israel",
+      "city": "Tel Aviv",
+      "aliases": [""]
+    },
+    {
+      "name": "Malmö FF",
+      "id": 61,
+      "country": "Sweden",
+      "city": "Malmö",
+      "aliases": ["Malmo"]
+    },
+    {
+      "name": "FC Milsami Orhei",
+      "id": 62,
+      "country": "Moldova",
+      "city": "Orhei",
+      "aliases": [""]
+    },
+    {
+      "name": "FC Dynamo Minsk",
+      "id": 63,
+      "country": "Belarus",
+      "city": "Minsk",
+      "aliases": [""]
+    },
+    {
+      "name": "OGC Nice",
+      "id": 64,
+      "country": "France",
+      "city": "Nice",
+      "aliases": [""]
+    },
+    {
+      "name": "FC Noah",
+      "id": 65,
+      "country": "Armenia",
+      "city": "Abovyan",
+      "aliases": [""]
+    },
+    {
+      "name": "NK Olimpija Ljubljana",
+      "id": 66,
+      "country": "Slovenia",
+      "city": "Ljubljana",
+      "aliases": [""]
+    },
+    {
+      "name": "Panathinaikos F.C.",
+      "id": 67,
+      "country": "Greece",
+      "city": "Athens",
+      "aliases": ["PAO"]
+    },
+    {
+      "name": "FC Viktoria Plzeň",
+      "id": 68,
+      "country": "Czechia",
+      "city": "Plzeň",
+      "aliases": ["Viktoria Plzen"]
+    },
+    {
+      "name": "Lech Poznań",
+      "id": 69,
+      "country": "Poland",
+      "city": "Poznań",
+      "aliases": ["Poznan"]
+    },
+    {
+      "name": "Rangers F.C.",
+      "id": 70,
+      "country": "Scotland",
+      "city": "Glasgow",
+      "aliases": [""]
+    },
+    {
+      "name": "FK RFS",
+      "id": 71,
+      "country": "Latvia",
+      "city": "Riga",
+      "aliases": [""]
+    },
+    {
+      "name": "HNK Rijeka",
+      "id": 72,
+      "country": "Croatia",
+      "city": "Rijeka",
+      "aliases": [""]
+    },
+    {
+      "name": "The New Saints F.C.",
+      "id": 73,
+      "country": "Wales",
+      "city": "Oswestry",
+      "aliases": [""]
+    },
+    {
+      "name": "FC Red Bull Salzburg",
+      "id": 74,
+      "country": "Austria",
+      "city": "Wals-Siezenheim",
+      "aliases": ["RB Salzburg"]
+    },
+    {
+      "name": "Servette FC",
+      "id": 75,
+      "country": "Switzerland",
+      "city": "Geneva",
+      "aliases": [""]
+    },
+    {
+      "name": "Shelbourne F.C.",
+      "id": 76,
+      "country": "Ireland",
+      "city": "Dublin",
+      "aliases": [""]
+    },
+    {
+      "name": "KF Shkëndija",
+      "id": 77,
+      "country": "North Macedonia",
+      "city": "Tetovo",
+      "aliases": ["Shkendija"]
+    },
+    {
+      "name": "FC Iberia 1999",
+      "id": 78,
+      "country": "Georgia",
+      "city": "Tbilsi",
+      "aliases": [""]
+    },
+    {
+      "name": "Víkingur Gøta",
+      "id": 79,
+      "country": "Faroe Islands",
+      "city": "Leirvík",
+      "aliases": ["Vikingur Gota"]
+    },
+    {
+      "name": "Virtus A.C. 1964",
+      "id": 80,
+      "country": "San Marino",
+      "city": "Acquaviva",
+      "aliases": [""]
+    },
+    {
+      "name": "FK Žalgiris",
+      "id": 81,
+      "country": "Lithuania",
+      "city": "Vilnius",
+      "aliases": ["Zalgiris"]
+    },
+    {
+      "name": "HŠK Zrinjski Mostar",
+      "id": 82,
+      "country": "Bosnia and Herzegovina",
+      "city": "Mostar",
+      "aliases": [""]
+    }
   ]
 }

@@ -12,6 +12,14 @@ const Settings = (props) => {
     }
   };
 
+  const teamsChange = () => {
+    if (props.allTeams) {
+      props.setAllTeams(false);
+    } else {
+      props.setAllTeams(true);
+    }
+  };
+
   useEffect(() => {}, [props.hard]);
 
   const closeSettings = () => {
@@ -27,21 +35,46 @@ const Settings = (props) => {
         <h1>Settings</h1>
         <h3>Difficulty</h3>
         <div className="difficultyContainer">
-          <p>Hide Logos</p>
-          <input
-            className="toggle"
-            type="checkbox"
-            id={"toggle"}
-            checked={props.showLogo}
-            onChange={logoChange}
-          />
-          <label
-            className="toggleLabel"
-            htmlFor={`toggle`}
-            style={{ background: props.showLogo && "#0000a0" }}
-          >
-            <span className="toggleButton" />
-          </label>
+          <ul>
+            <li>
+              <p>Hide Logos</p>
+              <div className="toggleContainer">
+                <input
+                  className="toggle"
+                  type="checkbox"
+                  id={"toggle"}
+                  checked={props.showLogo}
+                  onChange={logoChange}
+                />
+                <label
+                  className="toggleLabel"
+                  htmlFor={`toggle`}
+                  style={{ background: props.showLogo && "#0000a0" }}
+                >
+                  <span className="toggleButton" />
+                </label>
+              </div>
+            </li>
+            <li>
+              <p>Include all teams</p>
+              <div className="toggleContainer">
+                <input
+                  className="toggle"
+                  type="checkbox"
+                  id={"toggle2"}
+                  checked={props.allTeams}
+                  onChange={teamsChange}
+                />
+                <label
+                  className="toggleLabel"
+                  htmlFor={`toggle2`}
+                  style={{ background: props.allTeams && "#0000a0" }}
+                >
+                  <span className="toggleButton" />
+                </label>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

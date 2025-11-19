@@ -5,6 +5,7 @@ import json from "./data/db.json";
 const App = () => {
   const [solution, setSolution] = useState(null);
   const [teams, setTeams] = useState(null);
+  const [allTeams, setAllTeams] = useState(false);
 
   useEffect(() => {
     const teamData = json.teams;
@@ -15,9 +16,18 @@ const App = () => {
   }, [setSolution]);
 
   const pickAgain = () => {
-    let randomSolution = teams[Math.floor(Math.random() * teams.length)];
+    let solutionArray;
+    if (allTeams) {
+      solutionArray = [...teams, ...json.extras];
+    } else {
+      solutionArray = teams;
+    }
+    let randomSolution =
+      solutionArray[Math.floor(Math.random() * solutionArray.length)];
+    // Add logic in to permanently remove teams from db
     while (randomSolution === solution) {
-      randomSolution = teams[Math.floor(Math.random() * teams.length)];
+      randomSolution =
+        solutionArray[Math.floor(Math.random() * solutionArray.length)];
     }
     setSolution(randomSolution);
   };
@@ -25,7 +35,14 @@ const App = () => {
   return (
     <>
       {solution && (
-        <Header solution={solution} json={teams} pickAgain={pickAgain} />
+        <Header
+          solution={solution}
+          json={teams}
+          extras={json.extras}
+          pickAgain={pickAgain}
+          allTeams={allTeams}
+          setAllTeams={setAllTeams}
+        />
       )}
     </>
   );
