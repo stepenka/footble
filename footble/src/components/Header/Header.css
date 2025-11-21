@@ -102,3 +102,8 @@ header {
   padding: 5px;
   font-size: 32px;
 }
+
+.tracker {
+  margin: auto;
+  padding-right: 5px;
+}

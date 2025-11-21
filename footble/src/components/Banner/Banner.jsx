@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Banner.css";
 import { dap } from "../../assets";
 
@@ -10,6 +10,24 @@ const Banner = (props) => {
       props.setAllTeams(true);
     }
   };
+
+  useEffect(() => {
+    const handleKeyUp = (e) => {
+      if (
+        e.key === "Enter" &&
+        !props.allDone &&
+        !(!props.allTeams && props.baseDone)
+      ) {
+        props.playAgain();
+      }
+    };
+
+    document.addEventListener("keyup", handleKeyUp);
+
+    return () => {
+      document.removeEventListener("keyup", handleKeyUp);
+    };
+  }, []);
 
   return (
     <div className="modal">

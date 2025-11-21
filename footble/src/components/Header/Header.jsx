@@ -27,8 +27,6 @@ const Header = (props) => {
     setHard,
   } = useFootble(props.solution, [...props.json, ...props.extras]);
 
-  //   console.log(props.json);
-
   const change = (event) => {
     setCurrentGuess(event);
   };
@@ -165,6 +163,16 @@ const Header = (props) => {
                   filterOption={filterOptions}
                   styles={customStyles}
                 />
+                {props.allTeams ? (
+                  <span className="tracker">
+                    {squads.length - (props.easyLeft + props.hardLeft)}/
+                    {squads.length}
+                  </span>
+                ) : (
+                  <span className="tracker">
+                    {squads.length - props.easyLeft}/{squads.length}
+                  </span>
+                )}
               </div>
             )}
           </div>
@@ -191,6 +199,7 @@ const Header = (props) => {
             setHard={setHard}
             allTeams={props.allTeams}
             setAllTeams={props.setAllTeams}
+            baseDone={props.baseDone}
           ></Settings>
         )}
         {showHelp && <Help setShowHelp={setShowHelp}></Help>}

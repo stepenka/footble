@@ -64,6 +64,7 @@ const Settings = (props) => {
                   id={"toggle2"}
                   checked={props.allTeams}
                   onChange={teamsChange}
+                  disabled={props.baseDone}
                 />
                 <label
                   className="toggleLabel"

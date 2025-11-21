@@ -57,6 +57,8 @@ const App = () => {
           setAllTeams={setAllTeams}
           allDone={allDone}
           baseDone={baseDone}
+          easyLeft={teams.length}
+          hardLeft={extras.length}
         />
       )}
     </>
