@@ -1,16 +1,11 @@
-# React + Vite
+# Footble
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a wordle style website where players must guess the Champions League team.
 
-Currently, two official plugins are available:
+This website initially began as a Figma design which can be found [here](https://www.figma.com/design/eyNV3DrwO4WFlMcNg4R86b/Footble?m=auto&t=7YX6HG5woLGdp9KS-6).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This website is powered by React and Vite, alongside the following packages:
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Geolib](https://github.com/manuelbieh/geolib) - Provides the distance and direction between two sets of coordinates.
+- [MUI X Charts](https://mui.com/x/react-charts/) - Allows for the implementation of a dynamic chart to display data.
+- [React Select](https://react-select.com/) - Provides a configurable input field and dropdown list combination.
