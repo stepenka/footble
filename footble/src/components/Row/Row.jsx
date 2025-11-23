@@ -52,7 +52,9 @@ const Row = (props) => {
     );
     setDistance(distanceMeters / 1000);
 
-    if (distance === 0) {
+    console.log(direction);
+
+    if (distanceMeters === 0) {
       setDirectionImage(center);
     } else if (direction === "N") {
       setDirectionImage(north);
