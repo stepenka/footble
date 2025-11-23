@@ -20,7 +20,8 @@ const Help = (props) => {
         </p>
         <p>
           The feedback indicates (in the following order): <br />
-          The name of the team, their nation, their city.
+          The name of the team, their home city and nation, the distance and
+          direction from the solution.
         </p>
       </div>
     </div>
