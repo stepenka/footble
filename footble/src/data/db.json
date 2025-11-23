@@ -552,7 +552,7 @@
       "country": "Poland",
       "city": "Poznań",
       "aliases": ["Poznan"],
-      "coords": { "latitude": 52.408333, "logitude": 16.933611 }
+      "coords": [52.408333, 16.933611]
     },
     {
       "name": "Rangers F.C.",
