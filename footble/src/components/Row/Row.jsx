@@ -52,8 +52,6 @@ const Row = (props) => {
     );
     setDistance(distanceMeters / 1000);
 
-    console.log(direction);
-
     if (distanceMeters === 0) {
       setDirectionImage(center);
     } else if (direction === "N") {
