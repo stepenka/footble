@@ -42,6 +42,15 @@ import settings from "./settings.svg";
 import stats from "./stats.svg";
 import wrong from "./wrong.svg";
 import correct from "./correct.svg";
+import north from "./north.png";
+import northeast from "./northeast.png";
+import northwest from "./northwest.png";
+import south from "./south.png";
+import southeast from "./southeast.png";
+import southwest from "./southwest.png";
+import east from "./east.png";
+import west from "./west.png";
+import center from "./center.png";
 
 import atleti2 from "./Atleti2.png";
 import ajax2 from "./Ajax2.png";
@@ -355,4 +364,13 @@ export {
   nologo,
   wrong,
   correct,
+  north,
+  northeast,
+  northwest,
+  south,
+  southeast,
+  southwest,
+  east,
+  west,
+  center,
 };

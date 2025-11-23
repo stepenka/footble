@@ -5,252 +5,288 @@
       "id": 1,
       "country": "Netherlands",
       "city": "Amsterdam",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [52.372778, 4.893611]
     },
     {
       "name": "Arsenal",
       "id": 2,
       "country": "England",
       "city": "London",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [51.507222, -0.1275]
     },
     {
       "name": "Atalanta",
       "id": 3,
       "country": "Italy",
       "city": "Bergamo",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [45.695, 9.67]
     },
     {
       "name": "Atheltic Club Bilbao",
       "id": 4,
       "country": "Spain",
       "city": "Bilbao",
-      "aliases": ["Bilbao"]
+      "aliases": ["Bilbao"],
+      "coords": [43.256944, -2.923611]
     },
     {
       "name": "Atletico Madrid",
       "id": 5,
       "country": "Spain",
       "city": "Madrid",
-      "aliases": ["Atletico"]
+      "aliases": ["Atletico"],
+      "coords": [40.416944, -3.703333]
     },
     {
       "name": "Borussia Dortmund",
       "id": 6,
       "country": "Germany",
       "city": "Dortmund",
-      "aliases": ["Dortmund"]
+      "aliases": ["Dortmund"],
+      "coords": [51.513889, 7.465278]
     },
     {
       "name": "FC Barcelona",
       "id": 7,
       "country": "Spain",
       "city": "Barcelona",
-      "aliases": ["Barca", "Barcelona"]
+      "aliases": ["Barca", "Barcelona"],
+      "coords": [41.383333, 2.183333]
     },
     {
       "name": "Bayern Munich",
       "id": 8,
       "country": "Germany",
       "city": "Munich",
-      "aliases": ["Munich"]
+      "aliases": ["Munich"],
+      "coords": [48.1375, 11.575]
     },
     {
       "name": "SL Benfica",
       "id": 9,
       "country": "Portugal",
       "city": "Lisbon",
-      "aliases": ["Benfica"]
+      "aliases": ["Benfica"],
+      "coords": [38.725278, -9.15]
     },
     {
       "name": "Bodø/Glimt",
       "id": 10,
       "country": "Norway",
       "city": "Bodø",
-      "aliases": ["Bodo", "Glimt", "SK Bodø/Glimt"]
+      "aliases": ["Bodo", "Glimt", "SK Bodø/Glimt"],
+      "coords": [67.2827, 14.3751]
     },
     {
       "name": "Chelsea",
       "id": 11,
       "country": "England",
       "city": "London",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [51.507222, -0.1275]
     },
     {
       "name": "Club Brugge",
       "id": 12,
       "country": "Belgium",
       "city": "Bruges",
-      "aliases": ["Brugge"]
+      "aliases": ["Brugge"],
+      "coords": [51.507222, -0.1275]
     },
     {
       "name": "FC Copenhagen",
       "id": 13,
       "country": "Denmark",
       "city": "Copenhagen",
-      "aliases": ["Copenhagen"]
+      "aliases": ["Copenhagen"],
+      "coords": [55.676111, 12.568333]
     },
     {
       "name": "Eintracht Frankfurt",
       "id": 14,
       "country": "Germany",
       "city": "Frankfurt",
-      "aliases": ["Frankfurt"]
+      "aliases": ["Frankfurt"],
+      "coords": [50.110556, 8.682222]
     },
     {
       "name": "Galatasaray",
       "id": 15,
       "country": "Turkey",
       "city": "Istanbul",
-      "aliases": ["Gala"]
+      "aliases": ["Gala"],
+      "coords": [41.013611, 28.955]
     },
     {
       "name": "Internazionale Milano",
       "id": 16,
       "country": "Italy",
       "city": "Milan",
-      "aliases": ["Inter", "Milan"]
+      "aliases": ["Inter", "Milan"],
+      "coords": [45.466944, 9.19]
     },
     {
       "name": "Juventus",
       "id": 17,
       "country": "Italy",
       "city": "Turin",
-      "aliases": ["Juve"]
+      "aliases": ["Juve"],
+      "coords": [45.079167, 7.676111]
     },
     {
       "name": "Kairat Almaty",
       "id": 18,
       "country": "Kazakhstan",
       "city": "Almaty",
-      "aliases": ["Almaty"]
+      "aliases": ["Almaty"],
+      "coords": [43.233333, 76.95]
     },
     {
       "name": "Bayer 04 Leverkusen",
       "id": 19,
       "country": "Germany",
       "city": "Leverkusen",
-      "aliases": ["Bayer Leverkusen", "Leverkusen"]
+      "aliases": ["Bayer Leverkusen", "Leverkusen"],
+      "coords": [51.033333, 6.983333]
     },
     {
       "name": "Liverpool",
       "id": 20,
       "country": "England",
       "city": "Liverpool",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [53.407222, -2.991667]
     },
     {
       "name": "Manchester City",
       "id": 21,
       "country": "England",
       "city": "Manchester",
-      "aliases": ["City"]
+      "aliases": ["City"],
+      "coords": [53.479, -2.2452]
     },
     {
       "name": "Olympique de Marseille",
       "id": 22,
       "country": "France",
       "city": "Marseille",
-      "aliases": ["Marseille", "OM Marseille"]
+      "aliases": ["Marseille", "OM Marseille"],
+      "coords": [43.2964, 5.37]
     },
     {
       "name": "AS Monaco",
       "id": 23,
       "country": "Monaco",
       "city": "Monaco",
-      "aliases": ["Monaco"]
+      "aliases": ["Monaco"],
+      "coords": [43.729444, 7.415]
     },
     {
       "name": "Napoli",
       "id": 24,
       "country": "Italy",
       "city": "Naples",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [40.835833, 14.248611]
     },
     {
       "name": "Newcastle United",
       "id": 25,
       "country": "England",
       "city": "Newcastle upon Tyne",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [54.9738, -1.6131]
     },
     {
       "name": "Olympiacos FC",
       "id": 26,
       "country": "Greece",
       "city": "Piraeus",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [37.943, 23.646944]
     },
     {
       "name": "Pafos FC",
       "id": 27,
       "country": "Cyprus",
       "city": "Paphos",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [34.766667, 32.416667]
     },
     {
       "name": "Paris Saint-Germain",
       "id": 28,
       "country": "France",
       "city": "Paris",
-      "aliases": ["PSG"]
+      "aliases": ["PSG"],
+      "coords": [48.856667, 2.352222]
     },
     {
       "name": "PSV Eindhoven",
       "id": 29,
       "country": "Netherlands",
       "city": "Eindhoven",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [51.433333, 5.483333]
     },
     {
       "name": "Qarabağ FK",
       "id": 30,
       "country": "Azerbaijan",
       "city": "Aghdam",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [39.993056, 46.930556]
     },
     {
       "name": "Real Madrid C.F.",
       "id": 31,
       "country": "Spain",
       "city": "Madrid",
-      "aliases": ["Madrid", "Real"]
+      "aliases": ["Madrid", "Real"],
+      "coords": [40.416944, -3.703333]
     },
     {
       "name": "Slavia Praha",
       "id": 32,
       "country": "Czechia",
       "city": "Prague",
-      "aliases": ["Praha", "Prague"]
+      "aliases": ["Praha", "Prague"],
+      "coords": [50.0875, 14.421389]
     },
     {
       "name": "Sporting Clube de Portugal",
       "id": 33,
       "country": "Portugal",
       "city": "Lisbon",
-      "aliases": ["Lisbon"]
+      "aliases": ["Lisbon"],
+      "coords": [38.725278, -9.15]
     },
     {
       "name": "Tottenham Hotspur",
       "id": 34,
       "country": "England",
       "city": "London",
-      "aliases": ["Spurs"]
+      "aliases": ["Spurs"],
+      "coords": [51.507222, -0.1275]
     },
     {
       "name": "Union Saint-Gilloise",
       "id": 35,
       "country": "Belgium",
       "city": "Brussels",
-      "aliases": ["USG", "Saint-Gilloise"]
+      "aliases": ["USG", "Saint-Gilloise"],
+      "coords": [50.846667, 4.3525]
     },
     {
       "name": "Villarreal CF",
       "id": 36,
       "country": "Spain",
       "city": "Villarreal",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [39.937778, -0.101389]
     }
   ],
   "extras": [
@@ -259,322 +295,368 @@
       "id": 37,
       "country": "Switerland",
       "city": "Basel",
-      "aliases": ["Basel"]
+      "aliases": ["Basel"],
+      "coords": [47.554722, 7.590556]
     },
     {
       "name": "Crvena Zvezda",
       "id": 38,
       "country": "Serbia",
       "city": "Belgrade",
-      "aliases": ["Red Star Belgrade", "Belgrade"]
+      "aliases": ["Red Star Belgrade", "Belgrade"],
+      "coords": [44.817778, 20.456944]
     },
     {
       "name": "SK Brann",
       "id": 39,
       "country": "Norway",
       "city": "Bergen",
-      "aliases": ["Brann"]
+      "aliases": ["Brann"],
+      "coords": [60.389444, 5.33]
     },
     {
       "name": "ŠK Slovan Bratislava",
       "id": 40,
       "country": "Slovakia",
       "city": "Bratislava",
-      "aliases": ["Slovan Bratislava", "Bratislava"]
+      "aliases": ["Slovan Bratislava", "Bratislava"],
+      "coords": [48.143889, 17.109722]
     },
     {
       "name": "Breiðablik",
       "id": 41,
       "country": "Iceland",
       "city": "Kópavogur",
-      "aliases": ["Breidablik"]
+      "aliases": ["Breidablik"],
+      "coords": [64.11083, -21.90944]
     },
     {
       "name": "FK Budućnost Podgorica",
       "id": 42,
       "country": "Montenegro",
       "city": "Podgorica",
-      "aliases": ["Buducnost Podgorica"]
+      "aliases": ["Buducnost Podgorica"],
+      "coords": [42.441389, 19.262778]
     },
     {
       "name": "Celtic F.C.",
       "id": 43,
       "country": "Scotland",
       "city": "Glasgow",
-      "aliases": ["Celtic"]
+      "aliases": ["Celtic"],
+      "coords": [55.861111, -4.25]
     },
     {
       "name": "FC Differdange 03",
       "id": 44,
       "country": "Luxembourg",
       "city": "Differdange",
-      "aliases": ["Differdange"]
+      "aliases": ["Differdange"],
+      "coords": [49.5222, 5.8917]
     },
     {
       "name": "FC Drita",
       "id": 45,
       "country": "Kosovo",
       "city": "Gjilan",
-      "aliases": ["Drita"]
+      "aliases": ["Drita"],
+      "coords": [42.464722, 21.466944]
     },
     {
       "name": "FK Egnatia",
       "id": 46,
       "country": "Albania",
       "city": "Rrogozhinë",
-      "aliases": ["Egnatia"]
+      "aliases": ["Egnatia"],
+      "coords": [41.076111, 19.666667]
     },
     {
       "name": "Inter Club d'Escaldes",
       "id": 47,
       "country": "Andorra",
       "city": "Escaldes–Engordany",
-      "aliases": ["Escaldes"]
+      "aliases": ["Escaldes"],
+      "coords": [42.508889, 1.540833]
     },
     {
       "name": "FC Steaua București",
       "id": 48,
       "country": "Romania",
       "city": "Bucharest",
-      "aliases": ["FCSB", "Bucharest"]
+      "aliases": ["FCSB", "Bucharest"],
+      "coords": [44.4325, 26.103889]
     },
     {
       "name": "Fenerbahçe S.K.",
       "id": 49,
       "country": "Turkey",
       "city": "Istanbul",
-      "aliases": ["Fener"]
+      "aliases": ["Fener"],
+      "coords": [41.013611, 28.955]
     },
     {
       "name": "Ferencvárosi TC",
       "id": 50,
       "country": "Hungary",
       "city": "Ferencváros",
-      "aliases": ["Ferencvaros"]
+      "aliases": ["Ferencvaros"],
+      "coords": [47.466667, 19.083333]
     },
     {
       "name": "Feyenoord",
       "id": 51,
       "country": "Netherlands",
       "city": "Rotterdam",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [51.92, 4.48]
     },
     {
       "name": "SK Sturm Graz",
       "id": 52,
       "country": "Austria",
       "city": "Graz",
-      "aliases": ["Sturm Graz"]
+      "aliases": ["Sturm Graz"],
+      "coords": [47.070833, 15.438611]
     },
     {
       "name": "Ħamrun Spartans F.C.",
       "id": 53,
       "country": "Malta",
       "city": "Ħamrun",
-      "aliases": ["Hamrun Spartans"]
+      "aliases": ["Hamrun Spartans"],
+      "coords": [35.886111, 14.489444]
     },
     {
       "name": "Kuopion Palloseura",
       "id": 54,
       "country": "Finland",
       "city": "Kuopio",
-      "aliases": ["KuPS"]
+      "aliases": ["KuPS"],
+      "coords": [62.8925, 27.678333]
     },
     {
       "name": "FC Dynamo Kyiv",
       "id": 55,
       "country": "Ukraine",
       "city": "Kyiv",
-      "aliases": ["Dynamo Kiev"]
+      "aliases": ["Dynamo Kiev"],
+      "coords": [50.45, 30.523333]
     },
     {
       "name": "FCI Levadia Tallinn",
       "id": 56,
       "country": "Estonia",
       "city": "Tallinn",
-      "aliases": ["Levadia"]
+      "aliases": ["Levadia"],
+      "coords": [59.437222, 24.745278]
     },
     {
       "name": "Lincoln Red Imps F.C.",
       "id": 57,
       "country": "Gibraltar",
       "city": "Gibraltar",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [36.14, -5.35]
     },
     {
       "name": "Linfield F.C.",
       "id": 58,
       "country": "Northern Ireland",
       "city": "Belfast",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [54.596667, -5.93]
     },
     {
       "name": "PFC Ludogorets Razgrad",
       "id": 59,
       "country": "Bulgaria",
       "city": "Razgrad",
-      "aliases": ["Ludogorets"]
+      "aliases": ["Ludogorets"],
+      "coords": [43.533333, 26.516667]
     },
     {
       "name": "Maccabi Tel Aviv F.C.",
       "id": 60,
       "country": "Israel",
       "city": "Tel Aviv",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [32.08, 34.78]
     },
     {
       "name": "Malmö FF",
       "id": 61,
       "country": "Sweden",
       "city": "Malmö",
-      "aliases": ["Malmo"]
+      "aliases": ["Malmo"],
+      "coords": [55.605833, 13.035833]
     },
     {
       "name": "FC Milsami Orhei",
       "id": 62,
       "country": "Moldova",
       "city": "Orhei",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [47.383333, 28.816667]
     },
     {
       "name": "FC Dynamo Minsk",
       "id": 63,
       "country": "Belarus",
       "city": "Minsk",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [53.900556, 27.558611]
     },
     {
       "name": "OGC Nice",
       "id": 64,
       "country": "France",
       "city": "Nice",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [43.7034, 7.2663]
     },
     {
       "name": "FC Noah",
       "id": 65,
       "country": "Armenia",
       "city": "Abovyan",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [40.273889, 44.625556]
     },
     {
       "name": "NK Olimpija Ljubljana",
       "id": 66,
       "country": "Slovenia",
       "city": "Ljubljana",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [46.051389, 14.506111]
     },
     {
       "name": "Panathinaikos F.C.",
       "id": 67,
       "country": "Greece",
       "city": "Athens",
-      "aliases": ["PAO"]
+      "aliases": ["PAO"],
+      "coords": [37.984167, 23.728056]
     },
     {
       "name": "FC Viktoria Plzeň",
       "id": 68,
       "country": "Czechia",
       "city": "Plzeň",
-      "aliases": ["Viktoria Plzen"]
+      "aliases": ["Viktoria Plzen"],
+      "coords": [49.7475, 13.3775]
     },
     {
       "name": "Lech Poznań",
       "id": 69,
       "country": "Poland",
       "city": "Poznań",
-      "aliases": ["Poznan"]
+      "aliases": ["Poznan"],
+      "coords": { "latitude": 52.408333, "logitude": 16.933611 }
     },
     {
       "name": "Rangers F.C.",
       "id": 70,
       "country": "Scotland",
       "city": "Glasgow",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [55.861111, -4.25]
     },
     {
       "name": "FK RFS",
       "id": 71,
       "country": "Latvia",
       "city": "Riga",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [56.948889, 24.106389]
     },
     {
       "name": "HNK Rijeka",
       "id": 72,
       "country": "Croatia",
       "city": "Rijeka",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [45.327222, 14.441111]
     },
     {
       "name": "The New Saints F.C.",
       "id": 73,
       "country": "Wales",
       "city": "Oswestry",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [52.8598, -3.0538]
     },
     {
       "name": "FC Red Bull Salzburg",
       "id": 74,
       "country": "Austria",
       "city": "Wals-Siezenheim",
-      "aliases": ["RB Salzburg"]
+      "aliases": ["RB Salzburg"],
+      "coords": [47.766667, 12.966667]
     },
     {
       "name": "Servette FC",
       "id": 75,
       "country": "Switzerland",
       "city": "Geneva",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [46.201667, 6.146944]
     },
     {
       "name": "Shelbourne F.C.",
       "id": 76,
       "country": "Ireland",
       "city": "Dublin",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [53.35, -6.260278]
     },
     {
       "name": "KF Shkëndija",
       "id": 77,
       "country": "North Macedonia",
       "city": "Tetovo",
-      "aliases": ["Shkendija"]
+      "aliases": ["Shkendija"],
+      "coords": [42, 20.966667]
     },
     {
       "name": "FC Iberia 1999",
       "id": 78,
       "country": "Georgia",
       "city": "Tbilsi",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [41.7225, 44.7925]
     },
     {
       "name": "Víkingur Gøta",
       "id": 79,
       "country": "Faroe Islands",
       "city": "Leirvík",
-      "aliases": ["Vikingur Gota"]
+      "aliases": ["Vikingur Gota"],
+      "coords": [62.211111, -6.706111]
     },
     {
       "name": "Virtus A.C. 1964",
       "id": 80,
       "country": "San Marino",
       "city": "Acquaviva",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [43.9457, 12.418467]
     },
     {
       "name": "FK Žalgiris",
       "id": 81,
       "country": "Lithuania",
       "city": "Vilnius",
-      "aliases": ["Zalgiris"]
+      "aliases": ["Zalgiris"],
+      "coords": [54.687222, 25.28]
     },
     {
       "name": "HŠK Zrinjski Mostar",
       "id": 82,
       "country": "Bosnia and Herzegovina",
       "city": "Mostar",
-      "aliases": [""]
+      "aliases": [""],
+      "coords": [43.343611, 17.8075]
     }
   ]
 }

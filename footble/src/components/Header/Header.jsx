@@ -156,7 +156,7 @@ const Header = (props) => {
               <div className="displayGuess">
                 <Select
                   autoFocus={true}
-                  blurInputOnSelect={true}
+                  blurInputOnSelect={false}
                   options={squads}
                   onChange={(e) => change(e.label)}
                   placeholder="Enter a team name"

@@ -49,6 +49,12 @@
   margin: auto;
 }
 
+.directionSymbol {
+  height: 20px;
+  width: 20px;
+  margin: auto;
+}
+
 @keyframes flip {
   0% {
     transform: rotateX(0);
